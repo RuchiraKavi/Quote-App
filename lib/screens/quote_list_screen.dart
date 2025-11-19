@@ -74,8 +74,8 @@ class _QuoteListScreenState extends State<QuoteListScreen> {
             );
           }
         },
-        selectedItemColor: Colors.blue,
-        unselectedItemColor: Colors.grey,
+        selectedItemColor: Color(0xff4DA3FF),
+        unselectedItemColor: Colors.grey, 
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
