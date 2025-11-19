@@ -20,9 +20,6 @@ class _HomeScreenState extends State<HomeScreen> {
     final provider = Provider.of<QuoteProvider>(context);
 
     return Scaffold(
-      // -------------------------
-      // App Bar
-      // -------------------------
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.white,
@@ -37,9 +34,6 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
 
-      // -------------------------
-      // Bottom Navigation Bar
-      // -------------------------
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: 0,
         onTap: (i) {
@@ -64,9 +58,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
       backgroundColor: Colors.white,
 
-      // -------------------------
-      // Body with centered quote
-      // -------------------------
       body: provider.isLoading
           ? const Center(child: CircularProgressIndicator())
           : provider.error != null
